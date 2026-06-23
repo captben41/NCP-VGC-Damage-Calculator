@@ -39,3 +39,26 @@ input, select, textarea{
 .result-move-header{ color:var(--mute) !important; }
 .big-text, #mainResult{ font-family:"IBM Plex Mono",monospace !important; color:var(--ink) !important; }
 [id^=resultDamage]{ font-family:"IBM Plex Mono",monospace !important; color:var(--brand) !important; font-weight:600; }
+@media (max-width: 820px){
+  /* Stop anything from running off the right edge */
+  .wrapper, .wrapper * {
+    max-width:100% !important;
+    box-sizing:border-box;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+  }
+  /* Hide the intro/marketing paragraphs and the "back to old sets" note */
+  .wrapper > p { display:none !important; }
+  /* Let the generation row (RBY/GSC/...) scroll sideways instead of overflowing */
+  .generations{
+    display:block !important;
+    overflow-x:auto !important;
+    white-space:nowrap !important;
+    -webkit-overflow-scrolling:touch;
+    margin-top:8px;
+  }
+  .generations .btn{ display:inline-block !important; }
+}
+
+
+
