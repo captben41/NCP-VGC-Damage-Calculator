@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root{
+  --bg:#0E141D; --card:#18222F; --card2:#1F2B3A; --line:#2A3849;
+  --ink:#E9EFF6; --mute:#8597AC; --brand:#2E9BE6;
+}
+body, body.dark{
+  background:#0E141D !important;
+  color:var(--ink) !important;
+  font-family:"IBM Plex Sans",system-ui,sans-serif !important;
+}
+.header{
+  background:linear-gradient(135deg,#112C44,#1b3a5c) !important;
+  border-bottom:1px solid var(--line) !important;
+}
+.nav, .nav a{ color:#cfe0f0 !important; }
+.title-text{ font-family:"Space Grotesk",sans-serif !important; color:var(--ink) !important; }
+.panel, .poke-info, .field-info{
+  background:linear-gradient(180deg,var(--card2),var(--card)) !important;
+  border:1px solid var(--line) !important;
+  border-radius:14px !important;
+  overflow:hidden;
+}
+.panel-heading{ background:transparent !important; border-bottom:1px solid var(--line) !important; }
+.panel-title{ font-family:"Space Grotesk",sans-serif !important; color:var(--ink) !important; }
+.panel-body, label, td, th, p, span{ color:var(--ink) !important; }
+input, select, textarea{
+  background:#0E1722 !important; color:var(--ink) !important;
+  border:1px solid var(--line) !important; border-radius:8px !important;
+}
+.btn{
+  background:var(--card) !important; color:var(--ink) !important;
+  border:1px solid var(--line) !important; border-radius:10px !important;
+}
+.btn-input:checked + .btn{
+  background:linear-gradient(180deg,#2f6fa0,var(--brand)) !important;
+  border-color:var(--brand) !important; color:#fff !important;
+}
+.result-move-header{ color:var(--mute) !important; }
+.big-text, #mainResult{ font-family:"IBM Plex Mono",monospace !important; color:var(--ink) !important; }
+[id^=resultDamage]{ font-family:"IBM Plex Mono",monospace !important; color:var(--brand) !important; font-weight:600; }
