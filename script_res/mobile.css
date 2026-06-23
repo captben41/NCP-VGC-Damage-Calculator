@@ -1,0 +1,49 @@
+@media (max-width: 820px) {
+  .wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box;
+  }
+  .poke-info,
+  .field-info {
+    width: 100% !important;
+    float: none !important;
+    display: block !important;
+    margin: 0 0 14px 0 !important;
+    box-sizing: border-box;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    align-items: center;
+    font-size: 13px;
+  }
+  .btn,
+  .btn-small,
+  .btn-mid,
+  .btn-wide,
+  .btn-xwide {
+    min-height: 36px;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+  .panel-body table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
