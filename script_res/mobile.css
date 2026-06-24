@@ -62,3 +62,25 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+@media (max-width: 820px){
+  /* Remove the hidden 728px ad-spacer that forces the page wide */
+  div[style*="728px"]{ display:none !important; }
+
+  /* Field panel: stack the left/right control columns instead of side-by-side */
+  .field-info .panel-body div{ max-width:100% !important; }
+  .btn-group{ display:block !important; width:100% !important; }
+  .btn-group .left,
+  .btn-group .right{
+    float:none !important;
+    width:100% !important;
+    display:block !important;
+    margin:0 0 4px 0 !important;
+  }
+
+  /* Move rows: let the controls wrap to the next line instead of overflowing */
+  .move1,.move2,.move3,.move4{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:4px;
+  }
+}
